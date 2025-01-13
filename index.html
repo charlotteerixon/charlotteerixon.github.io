@@ -5,29 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Gulp Roast Coffee</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Add Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Add Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <div class="logo-container">
+            <img src="./media/images/gulp-logo.png" alt="Gulp Roast Coffee Logo" class="logo">
+        </div>
+        <nav class="menu">
             <ul>
-                <li><a href="index.html"><img src="media/images/gulp-logo.png" alt="Gulp Roast Coffee Logo" width="150"></a></li>
-                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a href="products.html"><i class="fas fa-coffee"></i> Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="home-hero">
+        <div class="home-hero">
             <div class="coffee-varieties">
-                <img src="media/images/coffee-varieties.jpg" alt="Three different roasts of coffee beans arranged on a wooden surface" class="featured-image">
+                <img src="./media/images/coffee-varieties.jpg" alt="Three different roasts of coffee beans arranged on a wooden surface" class="featured-image">
             </div>
             
             <div class="hero-content">
@@ -35,21 +31,23 @@
                 <p>There's <em>nothing</em> quite like enjoying that perfect cup of coffee.</p>
                 <p>Our coffee brightens your days—one sip at a time.</p>
                 <p>Join us at our cafe, or order our beans online. Either way, you're bound to improve your day!</p>
-                <a href="products.html" class="cta-button">View our coffee</a>
+                <a href="products.html" class="button">View our coffee</a>
             </div>
-        </section>
+        </div>
+
+        <div class="coffee-border">
+            <img src="./media/images/coffee-beans-border.jpg" alt="Decorative border made of coffee beans" class="border-image">
+        </div>
     </main>
 
-    <div class="coffee-border">
-        <img src="media/images/coffee-beans-border.jpg" alt="Decorative border made of coffee beans" class="border-image">
-    </div>
-
     <footer>
-        <p>&copy; 2025 Gulp Roast Coffee. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="container">
+            <p class="copyright">© 2024 Gulp Roast Coffee. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+            </div>
         </div>
     </footer>
 </body>
