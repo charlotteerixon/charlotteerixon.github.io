@@ -1,6 +1,5 @@
 /* see the brand guide for colors, fonts, and images in CodePen: 
 https://docs.google.com/document/d/124Wli0Rxp4GhOrrOijzznbnOfNC9kP8wOVZnPZsR2DE/edit?usp=sharing */
-/* Reset and Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -48,60 +47,112 @@ header {
   padding: 0.5rem;
 }
 
-
-/* Main container with rounded corners */
+/* About Page Styles */
 main .container {
   background-color: #082B59;
   padding: 2rem;
   margin: 2rem auto;
   max-width: 1200px;
-  border-radius: 15px; /* Added rounded corners */
-  text-align: center; /* Center align text */
+  border-radius: 15px;
+  text-align: center;
 }
 
-/* Hero image centered in container */
 .hero-image {
   display: block;
   text-align: center;
-  margin: 0 auto 2rem; /* Center margin */
+  margin: 0 auto 2rem;
 }
 
 .responsive-img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* Center the image */
+  margin: 0 auto;
 }
 
-/* About image centered outside container */
 .about-image {
   display: block;
   text-align: center;
-  margin: 3rem auto; /* Center margin */
+  margin: 3rem auto;
   width: 100%;
 }
 
 .about-image img {
   width: 30%;
   height: auto;
-  margin: 0 auto; /* Center the image */
+  margin: 0 auto;
   display: block;
 }
 
-/* Contact button centered under outside image */
-.button {
+/* Home Page Specific Styles */
+.home-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #082B59;
+  border-radius: 15px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.coffee-varieties {
+  margin-bottom: 2rem;
+}
+
+.featured-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.coffee-border {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+.border-image {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Shared Button Styles */
+.button, .cta-button {
   display: block;
   background-color: #D98555;
   color: white;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 25px;
-  margin: 2rem auto; /* Center margin */
+  margin: 2rem auto;
   width: fit-content;
   text-align: center;
 }
 
-.button:hover {
+.button:hover, .cta-button:hover {
   background-color: #9f6240;
 }
 
@@ -134,93 +185,45 @@ footer .container {
 /* Media Queries */
 @media (max-width: 768px) {
   header {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .logo-container {
-      margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 
   .menu {
-      margin: 0;
+    margin: 0;
   }
 
   .menu ul {
-      justify-content: center;
+    justify-content: center;
   }
 
   .about-image img {
-      width: 80%;
+    width: 80%;
   }
 
   .container {
-      margin: 1rem;
+    margin: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
   }
 }
 
-Note: Home page
+@media (min-width: 1024px) {
+  .home-hero {
+    padding: 4rem 2rem;
+  }
 
-
-.home-hero {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.coffee-varieties {
-  margin-bottom: 2rem;
-}
-
-.featured-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.hero-content h1 {
-  color: #082B59;
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  line-height: 1.8;
-}
-
-.cta-button {
-  display: inline-block;
-  background-color: #d98555;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 1.5rem;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #b97144;
-}
-
-.coffee-border {
-  width: 100%;
-  overflow: hidden;
-  margin-top: 3rem;
-}
-
-.border-image {
-  width: 100%;
-  max-height: 150px;
-  object-fit: cover;
+  .coffee-varieties {
+    margin-bottom: 3rem;
+  }
 }
