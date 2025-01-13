@@ -1,6 +1,7 @@
 /* see the brand guide for colors, fonts, and images in CodePen: 
 https://docs.google.com/document/d/124Wli0Rxp4GhOrrOijzznbnOfNC9kP8wOVZnPZsR2DE/edit?usp=sharing */
 /* Reset and Base Styles */
+/* Reset and Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,100 +11,120 @@ https://docs.google.com/document/d/124Wli0Rxp4GhOrrOijzznbnOfNC9kP8wOVZnPZsR2DE/
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #59331d; /* Changed page background to brown */
+  background-color: #59331d;  /* Brown background */
 }
 
 /* Header and Navigation */
 header {
-  background-color: #082B59; /* Blue navigation bar */
+  background-color: #082B59;  /* Blue nav bar */
   padding: 1rem 0;
-  margin-bottom: 2rem;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo-container {
+  width: 200px;
   text-align: center;
-  margin-bottom: 1rem;
 }
 
 .logo {
-  width: 200px;
+  width: 100%;
   height: auto;
 }
 
-.menu {
-  text-align: center;
-}
-
-.menu ul {
+.nav-links {
   list-style: none;
-  padding: 0;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.menu li {
+.nav-links li {
   display: inline;
 }
 
-.menu a {
-  color: white;
+.nav-links a {
+  color: white;  /* White navigation text */
   text-decoration: none;
   padding: 0 0.5rem;
 }
 
 /* Container Styles */
 .container {
-  background-color: #082B59; /* Blue container */
+  background-color: #082B59;  /* Blue container */
   padding: 2rem;
   margin: 2rem auto;
   max-width: 1200px;
-  color: white;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* Content Styles */
-h2 {
-  color: white;
-  margin-bottom: 1.5rem;
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-.body {
+.about-content {
+  color: white;  /* White text */
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  margin: 1.5rem 0;
+}
+
+.text-content p {
   color: white;
   margin-bottom: 1rem;
 }
 
-/* Button Styles */
-button {
-  display: block;
-  margin: 2rem auto;
-  padding: 0.75rem 1.5rem;
-  background-color: #D98555;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
+.about-image {
+  margin: 2rem 0;
+  text-align: center;
 }
 
-button:hover {
-  background-color: #9f6240;
+.about-image img {
+  width: 30%;
+  height: auto;
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  background-color: #D98555;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 25px;
+  margin: 1rem 0;
 }
 
 /* Footer Styles */
 footer {
   text-align: center;
   padding: 2rem;
-  color: white; /* Changed footer text to white since background is brown */
+  color: white;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
-  .container {
-      margin: 1rem;
-  }
-  
-  .image-two img {
-      width: 80%;
+@media (min-width: 768px) {
+  .main-nav {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
   }
 }
