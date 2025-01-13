@@ -10,18 +10,19 @@ https://docs.google.com/document/d/124Wli0Rxp4GhOrrOijzznbnOfNC9kP8wOVZnPZsR2DE/
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #59331d;
+  background-color: #59331d; /* Changed page background to brown */
 }
 
-/* Header Styles */
+/* Header and Navigation */
 header {
-  background-color: #082B59;
-  padding: 1rem;
+  background-color: #082B59; /* Blue navigation bar */
+  padding: 1rem 0;
+  margin-bottom: 2rem;
 }
 
 .logo-container {
-  text-align: left;
-  margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -29,11 +30,8 @@ header {
   height: auto;
 }
 
-/* Navigation Styles - Moved to upper right */
 .menu {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  text-align: center;
 }
 
 .menu ul {
@@ -51,114 +49,61 @@ header {
   padding: 0 0.5rem;
 }
 
-/* Main Content Styles */
-main .container {
-  background-color: #082B59;
+/* Container Styles */
+.container {
+  background-color: #082B59; /* Blue container */
   padding: 2rem;
   margin: 2rem auto;
   max-width: 1200px;
-  border-radius: 15px; /* Rounded corners */
+  color: white;
 }
 
-/* Hero Section */
-.hero-image {
-  display: block;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.responsive-img {
+img {
   max-width: 100%;
   height: auto;
 }
 
-/* About Content */
-.about-content {
-  text-align: center;
-  color: white;
-}
-
-h1 {
+/* Content Styles */
+h2 {
   color: white;
   margin-bottom: 1.5rem;
 }
 
-.text-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.text-content p {
+.body {
   color: white;
   margin-bottom: 1rem;
 }
 
-/* About Image - Moved outside container */
-.about-image {
+/* Button Styles */
+button {
   display: block;
   margin: 2rem auto;
-  text-align: center;
-}
-
-.about-image img {
-  width: 30%;
-  height: auto;
-}
-
-/* Button - Moved outside container */
-.button {
-  display: block; /* Changed to block for center alignment */
+  padding: 0.75rem 1.5rem;
   background-color: #D98555;
   color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
+  border: none;
   border-radius: 25px;
-  margin: 2rem auto; /* Center aligned */
-  width: fit-content; /* Width matches content */
+  cursor: pointer;
 }
 
-.button:hover {
+button:hover {
   background-color: #9f6240;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
+  text-align: center;
   padding: 2rem;
-}
-
-footer .container {
-  background-color: transparent;
-  border-radius: 0; /* Remove rounded corners from footer container */
-}
-
-.copyright {
-  color: white;
-  margin-bottom: 1rem;
-}
-
-.social-links {
-  margin-top: 1rem;
-}
-
-.social-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 0.5rem;
+  color: white; /* Changed footer text to white since background is brown */
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .menu {
-      position: static;
-      text-align: center;
-      margin-top: 1rem;
-  }
-
-  .about-image img {
-      width: 80%;
-  }
-  
   .container {
       margin: 1rem;
+  }
+  
+  .image-two img {
+      width: 80%;
   }
 }
