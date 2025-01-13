@@ -48,70 +48,47 @@ header {
   padding: 0.5rem;
 }
 
-/* Main Content Styles */
+
+/* Main container with rounded corners */
 main .container {
   background-color: #082B59;
   padding: 2rem;
   margin: 2rem auto;
   max-width: 1200px;
-  border-radius: 15px;
-  text-align: center;
+  border-radius: 15px; /* Added rounded corners */
+  text-align: center; /* Center align text */
 }
 
-/* Hero Section */
-.hero {
-  margin-bottom: 2rem;
-}
-
+/* Hero image centered in container */
 .hero-image {
   display: block;
   text-align: center;
+  margin: 0 auto 2rem; /* Center margin */
 }
 
 .responsive-img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto; /* Center the image */
 }
 
-/* About Content */
-.about-content {
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-h1 {
-  color: white;
-  margin-bottom: 1.5rem;
-}
-
-.text-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.text-content p {
-  color: white;
-  margin-bottom: 1rem;
-}
-
-/* About Image - Outside container */
+/* About image centered outside container */
 .about-image {
+  display: block;
   text-align: center;
-  margin: 3rem auto;
+  margin: 3rem auto; /* Center margin */
   width: 100%;
 }
 
 .about-image img {
   width: 30%;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto; /* Center the image */
   display: block;
 }
 
-/* Contact Button */
+/* Contact button centered under outside image */
 .button {
   display: block;
   background-color: #D98555;
@@ -119,8 +96,9 @@ h1 {
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 25px;
-  margin: 2rem auto;
+  margin: 2rem auto; /* Center margin */
   width: fit-content;
+  text-align: center;
 }
 
 .button:hover {
